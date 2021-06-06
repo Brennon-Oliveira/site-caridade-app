@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "site-caridade-app",
-    "slug": "site-caridade-app",
+    "name": "site-caridade-mobile",
+    "slug": "site-caridade-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
