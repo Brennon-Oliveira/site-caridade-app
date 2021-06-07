@@ -36,6 +36,7 @@ export default ()=>{
                     autoCompleteType='username'
                     style={styles.input}
                 />
+                
                 <TextInput
                     placeholder='Email...'
                     value={email}

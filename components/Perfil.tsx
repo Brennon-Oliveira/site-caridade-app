@@ -3,9 +3,18 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 import { ColorsContext } from '../contexts/ColorContext';
 
-export default () => {
+export default (props: any) => {
 
     const { black, white} = useContext(ColorsContext);
+
+    if(props.posts){
+        return (
+            <View style={{ alignItems: 'center'}}>
+                <View style={{ ...styles.userImage,borderColor:black.toString() }}></View>
+                <Text style={{ ...styles.userName, color:black.toString() }}>Nome do Usuário</Text>
+            </View>
+        )
+    }
 
     return (
         <View style={{ paddingTop: 10, alignItems: 'center', marginTop: Constants.statusBarHeight }}>
