@@ -15,7 +15,7 @@ export default function Post(props: props){
     
     const [search, setSearch] = useState('');
 
-    const { black, white } = useContext(ColorsContext);
+    const { black, white, red } = useContext(ColorsContext);
 
     return (
         <View style={{ paddingHorizontal: 10, paddingTop: 10, alignItems: 'center',
@@ -25,8 +25,8 @@ export default function Post(props: props){
             <Text style={{ ...styles.text, color:black.toString() }}>{props.text}</Text>
             <TouchableOpacity style={{alignItems:'center'}} >
                 <Text style={{...styles.buttonText,
-                    backgroundColor:black.toString(),
-                    color:white.toString()}}>Enviar!</Text>
+                    backgroundColor:red.toString(),
+                    color:white.toString()}}>Curtir!</Text>
             </TouchableOpacity>
         </View>
     )
